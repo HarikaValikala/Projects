@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="col-md-4 box">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group" >
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" [(ngModel)]="loginData.email"  required />
+                
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" [(ngModel)]="loginData.password"  name="password" required />
+            </div>
+            <div class="form-group">
+                <a routerLink="/reset">Forget Password</a>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" (click) = "onLogin();">Login</button>
+                <a routerLink="/register" class="btn btn-link">Register</a>
+            </div>
+        </form>
+    </div>
+</div>
